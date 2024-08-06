@@ -30,22 +30,34 @@
 <!-- FIN BARRA DE NAVEGACION-->
 
 <!-- Inicio de un formulario -->
-<form>
-    <div class="mb-3">
-        <label for="id-usuario" class="form-label">Ingrese Usuario</label>
-        <input type="text" id="id-usuario" class="form-control" placeholder="ingrese su usuario">
-    </div>
-    <div class="mb-3">
-        <label for="id-password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="id-password">
-    </div>
-    <!-- <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div> -->
+<!--
+d-flex: Aplica el estilo de flexbox a este contenedor.
+justify-content-center: Centra el contenido horizontalmente.
+align-items-center: Centra el contenido verticalmente.
+vh-100: Establece la altura del contenedor al 100% de la altura de la ventana gráfica. -->
+<div class="d-flex justify-content-center align-items-center vh-100">
+<!--
+border: Añade un borde alrededor del contenedor.
+p-4: Añade un padding de 1.5 rem (aproximadamente) alrededor del contenido.
+rounded: Redondea las esquinas del contenedor.-->
+    <div class="border p-4 rounded">
+    <form>
+        <div class="mb-3">
+            <label for="id-usuario" class="form-label">Ingrese Usuario</label>
+            <input type="text" id="id-usuario" class="form-control" placeholder="ingrese su usuario">
+        </div>
+        <div class="mb-3">
+            <label for="id-password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="id-password">
+        </div>
+        <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
     <button type="submit" class="btn btn-primary">Ingresar</button>
 </form>
-
+</div>
+</div>
 <!-- Fin del formulario -->
 
 </body>
