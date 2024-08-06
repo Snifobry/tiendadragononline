@@ -17,11 +17,13 @@ public class RegistrarController {
         public String formularioUsuario(Model model) {
             //Este "usuario" es mi opbjeto o bien dicho el model de mi objeto con sus
             //propiedades y el new es para instanciar un nuevo Usuario con el metodo new Usuario()
+            //este "usuario" esta en minuscula y se lo menciona en el form de registroUsuario
+            //en el th:object
             model.addAttribute("usuario", new Usuario());
             return "/RegistroUsuario/registroUsuario";
     }
 
-    @PostMapping("/registrar")
+    @PostMapping("/registrarUsuario")
     public String registrarUsuario(@Valid @ModelAttribute Usuario usuario, BindingResult bindingResult, Model model) {
         if(bindingResult.hasErrors()) {
             //sirve para poner errores en el formulario
@@ -31,6 +33,5 @@ public class RegistrarController {
             return "/RegistroUsuario/registroUsuarioSuccessfull";
         }
     }
-
 
 }
