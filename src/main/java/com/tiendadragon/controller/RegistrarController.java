@@ -28,7 +28,7 @@ public class RegistrarController {
         if(bindingResult.hasErrors()) {
             //sirve para poner errores en el formulario
             model.addAttribute("errors", bindingResult.getAllErrors());
-            return "/RegistroUsuario/registroUsuarioError";
+            return "/RegistroUsuario/registroUsuario";
         } else {
             return "/RegistroUsuario/registroUsuarioSuccessfull";
         }
